@@ -1,0 +1,36 @@
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+*.manifest
+*.spec
+
+# Jupyter / Virtual environment
+.venv/
+venv/
+ENV/
+env/
+.idea/
+.vscode/
+
+# Database & Runtime output (keep data schema files, ignore mutable local sqlite DBs)
+*.db-journal
+*.sqlite3-journal
+
+# Models Registry local dumps (keep registry directory structure)
+models_registry/*.joblib
+!models_registry/.gitkeep
+
+# Node / Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+*.log
+
+# Environment variables
+.env
+.env.local

@@ -1,6 +1,7 @@
 """
-RAILCAST AI - Counterfactual Operations Simulator & Delay Recovery Engine
+RAILYATRA - Counterfactual Operations Simulator & Delay Recovery Engine
 Simulates "What-If" scenarios by recalculating ETA predictions under hypothetical operational interventions.
+Explicitly labels all outputs as COUNTERFACTUAL SIMULATION - NOT OBSERVED REALITY - NOT CAUSAL PROOF.
 """
 
 from datetime import datetime, timedelta
@@ -13,15 +14,12 @@ class CounterfactualSimulator:
         self,
         current_features: dict,
         sched_arr_iso: str,
-        priority_boost: int = 0, # e.g. -1 means give higher priority (1 is max)
+        priority_boost: int = 0,
         dwell_reduction_min: float = 0.0,
         congestion_override: float = None,
         weather_override: str = None,
         clear_preceding_conflict: bool = False
     ):
-        """
-        Recalculates prediction under hypothetical operator overrides.
-        """
         # Base Prediction
         base_result = self.model_pipeline.predict_single(current_features)
         base_delay = base_result["predicted_delay_min"]
@@ -52,11 +50,14 @@ class CounterfactualSimulator:
         potential_recovery = round(max(0.0, base_delay - cf_delay), 1)
 
         # Parse schedule date
-        sched_arr_dt = datetime.fromisoformat(sched_arr_iso)
+        try:
+            sched_arr_dt = datetime.fromisoformat(sched_arr_iso)
+        except Exception:
+            sched_arr_dt = datetime.now()
+
         base_eta_dt = sched_arr_dt + timedelta(minutes=base_delay)
         cf_eta_dt = sched_arr_dt + timedelta(minutes=cf_delay)
 
-        # Generate Counterfactual Narrative for AI Story Mode
         narrative = (
             f"Baseline prediction estimates arrival delay of {base_delay:.1f} min (ETA {base_eta_dt.strftime('%H:%M')}). "
             f"Under simulated counterfactual operational interventions "
@@ -67,6 +68,7 @@ class CounterfactualSimulator:
 
         return {
             "is_simulation": True,
+            "simulation_notice": "COUNTERFACTUAL SIMULATION - NOT OBSERVED REALITY - NOT CAUSAL PROOF",
             "label": "SIMULATED / COUNTERFACTUAL PREDICTION",
             "base_predicted_delay_min": base_delay,
             "base_eta": base_eta_dt.strftime("%H:%M"),

@@ -1,0 +1,200 @@
+[
+  {
+    "code": "NDLS",
+    "name": "New Delhi",
+    "lat": 28.6430,
+    "lon": 77.2194,
+    "zone": "NR",
+    "state": "Delhi",
+    "corridor": "DELHI-HOWRAH TRUNK",
+    "platforms": 16,
+    "congestion_index": 0.85
+  },
+  {
+    "code": "MTJ",
+    "name": "Mathura Junction",
+    "lat": 27.5029,
+    "lon": 77.6713,
+    "zone": "NCR",
+    "state": "Uttar Pradesh",
+    "corridor": "DELHI-MUMBAI TRUNK",
+    "platforms": 10,
+    "congestion_index": 0.65
+  },
+  {
+    "code": "CNB",
+    "name": "Kanpur Central",
+    "lat": 26.4542,
+    "lon": 80.3507,
+    "zone": "NCR",
+    "state": "Uttar Pradesh",
+    "corridor": "DELHI-HOWRAH TRUNK",
+    "platforms": 10,
+    "congestion_index": 0.82
+  },
+  {
+    "code": "PRYJ",
+    "name": "Prayagraj Junction",
+    "lat": 25.4410,
+    "lon": 81.8254,
+    "zone": "NCR",
+    "state": "Uttar Pradesh",
+    "corridor": "DELHI-HOWRAH TRUNK",
+    "platforms": 10,
+    "congestion_index": 0.78
+  },
+  {
+    "code": "DDU",
+    "name": "Pt. Deen Dayal Upadhyaya Jn",
+    "lat": 25.2818,
+    "lon": 83.1152,
+    "zone": "ECR",
+    "state": "Uttar Pradesh",
+    "corridor": "DELHI-HOWRAH TRUNK",
+    "platforms": 8,
+    "congestion_index": 0.80
+  },
+  {
+    "code": "GAYA",
+    "name": "Gaya Junction",
+    "lat": 24.7964,
+    "lon": 84.9994,
+    "zone": "ECR",
+    "state": "Bihar",
+    "corridor": "GRAND CHORD",
+    "platforms": 9,
+    "congestion_index": 0.60
+  },
+  {
+    "code": "DHN",
+    "name": "Dhanbad Junction",
+    "lat": 23.7957,
+    "lon": 86.4304,
+    "zone": "ECR",
+    "state": "Jharkhand",
+    "corridor": "GRAND CHORD",
+    "platforms": 9,
+    "congestion_index": 0.68
+  },
+  {
+    "code": "HWH",
+    "name": "Howrah Junction",
+    "lat": 22.5839,
+    "lon": 88.3426,
+    "zone": "ER",
+    "state": "West Bengal",
+    "corridor": "DELHI-HOWRAH TRUNK",
+    "platforms": 23,
+    "congestion_index": 0.90
+  },
+  {
+    "code": "KOTA",
+    "name": "Kota Junction",
+    "lat": 25.2138,
+    "lon": 75.8648,
+    "zone": "WCR",
+    "state": "Rajasthan",
+    "corridor": "DELHI-MUMBAI TRUNK",
+    "platforms": 6,
+    "congestion_index": 0.55
+  },
+  {
+    "code": "RTM",
+    "name": "Ratlam Junction",
+    "lat": 23.3339,
+    "lon": 75.0366,
+    "zone": "WR",
+    "state": "Madhya Pradesh",
+    "corridor": "DELHI-MUMBAI TRUNK",
+    "platforms": 7,
+    "congestion_index": 0.58
+  },
+  {
+    "code": "BRC",
+    "name": "Vadodara Junction",
+    "lat": 22.3107,
+    "lon": 73.1812,
+    "zone": "WR",
+    "state": "Gujarat",
+    "corridor": "DELHI-MUMBAI TRUNK",
+    "platforms": 7,
+    "congestion_index": 0.72
+  },
+  {
+    "code": "MMCT",
+    "name": "Mumbai Central",
+    "lat": 18.9696,
+    "lon": 72.8193,
+    "zone": "WR",
+    "state": "Maharashtra",
+    "corridor": "DELHI-MUMBAI TRUNK",
+    "platforms": 9,
+    "congestion_index": 0.88
+  },
+  {
+    "code": "LKO",
+    "name": "Lucknow Charbagh",
+    "lat": 26.8317,
+    "lon": 80.9248,
+    "zone": "NR",
+    "state": "Uttar Pradesh",
+    "corridor": "NORTHERN TRUNK",
+    "platforms": 9,
+    "congestion_index": 0.75
+  },
+  {
+    "code": "BSB",
+    "name": "Varanasi Junction",
+    "lat": 25.3268,
+    "lon": 82.9869,
+    "zone": "NR",
+    "state": "Uttar Pradesh",
+    "corridor": "NORTHERN TRUNK",
+    "platforms": 9,
+    "congestion_index": 0.79
+  },
+  {
+    "code": "PNBE",
+    "name": "Patna Junction",
+    "lat": 25.6093,
+    "lon": 85.1376,
+    "zone": "ECR",
+    "state": "Bihar",
+    "corridor": "MAIN LINE",
+    "platforms": 10,
+    "congestion_index": 0.84
+  },
+  {
+    "code": "BZA",
+    "name": "Vijayawada Junction",
+    "lat": 16.5175,
+    "lon": 80.6275,
+    "zone": "SCR",
+    "state": "Andhra Pradesh",
+    "corridor": "CHENNAI-HOWRAH TRUNK",
+    "platforms": 10,
+    "congestion_index": 0.76
+  },
+  {
+    "code": "MAS",
+    "name": "MGR Chennai Central",
+    "lat": 13.0827,
+    "lon": 80.2757,
+    "zone": "SR",
+    "state": "Tamil Nadu",
+    "corridor": "SOUTHERN TRUNK",
+    "platforms": 12,
+    "congestion_index": 0.85
+  },
+  {
+    "code": "SBC",
+    "name": "KSR Bengaluru City",
+    "lat": 12.9784,
+    "lon": 77.5696,
+    "zone": "SWR",
+    "state": "Karnataka",
+    "corridor": "SOUTHERN TRUNK",
+    "platforms": 10,
+    "congestion_index": 0.81
+  }
+]

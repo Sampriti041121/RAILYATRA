@@ -125,7 +125,7 @@ export function App() {
 
       {/* Footer */}
       <footer className="border-t border-slate-300 dark:border-slate-800 bg-white dark:bg-slate-900 py-4 px-6 text-center text-xs text-slate-600 dark:text-slate-400 font-mono">
-        YATRA AI Enterprise Intelligence Portal v1.4.0 • Ministry of Railways Dynamic Forecasting System • Smart India Hackathon (SIH26028)
+        RAILYATRA Real-Time Railway Intelligence & Passenger Platform • AI Decision-Support Prototype for SIH26028
       </footer>
 
       {/* Interactive Modals */}

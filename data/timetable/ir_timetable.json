@@ -1,0 +1,104 @@
+[
+  {
+    "train_number": "12301",
+    "train_name": "Howrah - New Delhi Rajdhani Express",
+    "train_type": "Rajdhani",
+    "priority": 1,
+    "origin": "HWH",
+    "destination": "NDLS",
+    "running_days": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+    "max_speed": 130,
+    "base_dwell_min": 5.0,
+    "recovery_factor": 0.85,
+    "source": "Indian Railways National Train Enquiry System (NTES) Timetable",
+    "route": [
+      { "sequence_idx": 0, "station_code": "HWH", "station_name": "Howrah Junction", "sched_arr": "16:50", "sched_dep": "16:50", "distance_km": 0, "day": 1 },
+      { "sequence_idx": 1, "station_code": "DHN", "station_name": "Dhanbad Junction", "sched_arr": "19:55", "sched_dep": "20:00", "distance_km": 259, "day": 1 },
+      { "sequence_idx": 2, "station_code": "GAYA", "station_name": "Gaya Junction", "sched_arr": "22:34", "sched_dep": "22:37", "distance_km": 459, "day": 1 },
+      { "sequence_idx": 3, "station_code": "DDU", "station_name": "Pt. Deen Dayal Upadhyaya Jn", "sched_arr": "00:45", "sched_dep": "00:55", "distance_km": 664, "day": 2 },
+      { "sequence_idx": 4, "station_code": "PRYJ", "station_name": "Prayagraj Junction", "sched_arr": "02:43", "sched_dep": "02:45", "distance_km": 817, "day": 2 },
+      { "sequence_idx": 5, "station_code": "CNB", "station_name": "Kanpur Central", "sched_arr": "04:50", "sched_dep": "04:55", "distance_km": 1011, "day": 2 },
+      { "sequence_idx": 6, "station_code": "NDLS", "station_name": "New Delhi", "sched_arr": "10:05", "sched_dep": "10:05", "distance_km": 1451, "day": 2 }
+    ]
+  },
+  {
+    "train_number": "12302",
+    "train_name": "New Delhi - Howrah Rajdhani Express",
+    "train_type": "Rajdhani",
+    "priority": 1,
+    "origin": "NDLS",
+    "destination": "HWH",
+    "running_days": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+    "max_speed": 130,
+    "base_dwell_min": 5.0,
+    "recovery_factor": 0.85,
+    "source": "Indian Railways National Train Enquiry System (NTES) Timetable",
+    "route": [
+      { "sequence_idx": 0, "station_code": "NDLS", "station_name": "New Delhi", "sched_arr": "16:55", "sched_dep": "16:55", "distance_km": 0, "day": 1 },
+      { "sequence_idx": 1, "station_code": "CNB", "station_name": "Kanpur Central", "sched_arr": "21:32", "sched_dep": "21:37", "distance_km": 440, "day": 1 },
+      { "sequence_idx": 2, "station_code": "PRYJ", "station_name": "Prayagraj Junction", "sched_arr": "23:43", "sched_dep": "23:45", "distance_km": 634, "day": 1 },
+      { "sequence_idx": 3, "station_code": "DDU", "station_name": "Pt. Deen Dayal Upadhyaya Jn", "sched_arr": "01:42", "sched_dep": "01:52", "distance_km": 787, "day": 2 },
+      { "sequence_idx": 4, "station_code": "GAYA", "station_name": "Gaya Junction", "sched_arr": "03:55", "sched_dep": "03:58", "distance_km": 992, "day": 2 },
+      { "sequence_idx": 5, "station_code": "DHN", "station_name": "Dhanbad Junction", "sched_arr": "06:33", "sched_dep": "06:38", "distance_km": 1192, "day": 2 },
+      { "sequence_idx": 6, "station_code": "HWH", "station_name": "Howrah Junction", "sched_arr": "09:55", "sched_dep": "09:55", "distance_km": 1451, "day": 2 }
+    ]
+  },
+  {
+    "train_number": "12951",
+    "train_name": "Mumbai Central - New Delhi Rajdhani Express",
+    "train_type": "Rajdhani",
+    "priority": 1,
+    "origin": "MMCT",
+    "destination": "NDLS",
+    "running_days": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+    "max_speed": 130,
+    "base_dwell_min": 5.0,
+    "recovery_factor": 0.85,
+    "source": "Indian Railways National Train Enquiry System (NTES) Timetable",
+    "route": [
+      { "sequence_idx": 0, "station_code": "MMCT", "station_name": "Mumbai Central", "sched_arr": "17:00", "sched_dep": "17:00", "distance_km": 0, "day": 1 },
+      { "sequence_idx": 1, "station_code": "BRC", "station_name": "Vadodara Junction", "sched_arr": "21:03", "sched_dep": "21:13", "distance_km": 393, "day": 1 },
+      { "sequence_idx": 2, "station_code": "RTM", "station_name": "Ratlam Junction", "sched_arr": "00:25", "sched_dep": "00:28", "distance_km": 653, "day": 2 },
+      { "sequence_idx": 3, "station_code": "KOTA", "station_name": "Kota Junction", "sched_arr": "03:15", "sched_dep": "03:25", "distance_km": 920, "day": 2 },
+      { "sequence_idx": 4, "station_code": "MTJ", "station_name": "Mathura Junction", "sched_arr": "06:43", "sched_dep": "06:45", "distance_km": 1244, "day": 2 },
+      { "sequence_idx": 5, "station_code": "NDLS", "station_name": "New Delhi", "sched_arr": "08:32", "sched_dep": "08:32", "distance_km": 1386, "day": 2 }
+    ]
+  },
+  {
+    "train_number": "22436",
+    "train_name": "New Delhi - Varanasi Vande Bharat Express",
+    "train_type": "Vande Bharat",
+    "priority": 1,
+    "origin": "NDLS",
+    "destination": "BSB",
+    "running_days": ["Tue", "Wed", "Fri", "Sat", "Sun"],
+    "max_speed": 130,
+    "base_dwell_min": 4.0,
+    "recovery_factor": 0.90,
+    "source": "Indian Railways National Train Enquiry System (NTES) Timetable",
+    "route": [
+      { "sequence_idx": 0, "station_code": "NDLS", "station_name": "New Delhi", "sched_arr": "06:00", "sched_dep": "06:00", "distance_km": 0, "day": 1 },
+      { "sequence_idx": 1, "station_code": "CNB", "station_name": "Kanpur Central", "sched_arr": "10:08", "sched_dep": "10:10", "distance_km": 440, "day": 1 },
+      { "sequence_idx": 2, "station_code": "PRYJ", "station_name": "Prayagraj Junction", "sched_arr": "12:08", "sched_dep": "12:10", "distance_km": 634, "day": 1 },
+      { "sequence_idx": 3, "station_code": "BSB", "station_name": "Varanasi Junction", "sched_arr": "14:00", "sched_dep": "14:00", "distance_km": 759, "day": 1 }
+    ]
+  },
+  {
+    "train_number": "12004",
+    "train_name": "New Delhi - Lucknow Shatabdi Express",
+    "train_type": "Shatabdi",
+    "priority": 1,
+    "origin": "NDLS",
+    "destination": "LKO",
+    "running_days": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+    "max_speed": 130,
+    "base_dwell_min": 4.0,
+    "recovery_factor": 0.85,
+    "source": "Indian Railways National Train Enquiry System (NTES) Timetable",
+    "route": [
+      { "sequence_idx": 0, "station_code": "NDLS", "station_name": "New Delhi", "sched_arr": "06:10", "sched_dep": "06:10", "distance_km": 0, "day": 1 },
+      { "sequence_idx": 1, "station_code": "CNB", "station_name": "Kanpur Central", "sched_arr": "11:20", "sched_dep": "11:25", "distance_km": 440, "day": 1 },
+      { "sequence_idx": 2, "station_code": "LKO", "station_name": "Lucknow Charbagh", "sched_arr": "12:40", "sched_dep": "12:40", "distance_km": 512, "day": 1 }
+    ]
+  }
+]

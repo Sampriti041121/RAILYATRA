@@ -1,5 +1,5 @@
 """
-RAILCAST AI - Pydantic Request & Response Schemas
+RAILYATRA - Pydantic Request & Response Schemas
 """
 
 from pydantic import BaseModel, Field
@@ -43,12 +43,18 @@ class PredictionTrajectoryItem(BaseModel):
     sched_dep: str
     actual_or_forecast_arr: str
     forecast_arr_delay_min: float
-    status: str # "ACTUAL" or "FORECAST"
+    status: str
 
-class ExplainabilityItem(BaseModel):
+class ShapContributionItem(BaseModel):
     feature: str
+    feature_value: float
     impact_min: float
-    type: str # "positive" or "negative"
+    direction: str
+
+class ShapExplainabilitySchema(BaseModel):
+    base_value_min: float
+    predicted_value_min: float
+    contributions: List[ShapContributionItem]
 
 class NovelMetricsSchema(BaseModel):
     delay_momentum: float
@@ -66,20 +72,23 @@ class TrainPredictionResponse(BaseModel):
     sched_destination_eta: str
     ai_predicted_destination_eta: str
     ai_predicted_delay_min: float
+    P10_lower_95_eta: Optional[str] = None
+    P50_median_eta: Optional[str] = None
+    P90_upper_95_eta: Optional[str] = None
     lower_bound_80_eta: str
     upper_bound_80_eta: str
     lower_bound_95_eta: str
     upper_bound_95_eta: str
-    confidence_score: float
     interval_width_min: float
     amplification_factor: float
     model_version: str
     trajectory: List[PredictionTrajectoryItem]
-    explainability: List[ExplainabilityItem]
+    shap_explainability: Optional[ShapExplainabilitySchema] = None
     delay_dna: Dict[str, Any]
     cascade_prediction: Dict[str, Any]
     novel_metrics: NovelMetricsSchema
     ai_story_narrative: str
+    data_status: str = "HISTORICAL" # LIVE, PREDICTED, HISTORICAL, ESTIMATED, STALE, UNAVAILABLE
 
 class WhatIfRequest(BaseModel):
     train_id: str
@@ -92,6 +101,7 @@ class WhatIfRequest(BaseModel):
 class WhatIfResponse(BaseModel):
     train_id: str
     is_simulation: bool = True
+    simulation_notice: str = "COUNTERFACTUAL SIMULATION - NOT OBSERVED REALITY - NOT CAUSAL PROOF"
     label: str
     base_predicted_delay_min: float
     base_eta: str
@@ -120,3 +130,13 @@ class DataHealthSchema(BaseModel):
     metrics: Dict[str, float]
     anomalies_detected: Dict[str, int]
     last_evaluated: str
+
+class PassengerGpsMatchRequest(BaseModel):
+    latitude: float
+    longitude: float
+    accuracy_m: Optional[float] = 10.0
+    speed_kmh: Optional[float] = 0.0
+
+class PassengerQueryRequest(BaseModel):
+    query: str
+    train_number: Optional[str] = None
